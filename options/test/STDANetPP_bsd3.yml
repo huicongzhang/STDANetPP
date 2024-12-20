@@ -1,0 +1,82 @@
+# GENERATE TIME: Wed Dec 14 12:52:22 2022
+# CMD:
+# basicsr/train.py --local_rank=0 -opt options/train/BasicVSRPP/train_BasicVSRPPDATN_PatchV3_LRAM_GoPro.yml --launcher pytorch
+
+# general settings
+name: BSD3_STFANetpp
+model_type: ModelVRT 
+scale: 1
+num_gpu: 1  # official: 8 GPUs
+manual_seed: 0
+reload: true
+retrain: false
+ratio: 0.25
+no_fix_flow: true
+
+# dataset and data loader settings
+datasets:
+  val:
+    name: REDS4
+    type: VideoRecurrentRVRTTestDataset
+    dataroot_gt: /home/hczhang/datasets/BSD_BasicsrReorder/BSD_3ms24ms/test/gt
+    dataroot_lq: /home/hczhang/datasets/BSD_BasicsrReorder/BSD_3ms24ms/test/blur
+
+    cache_data: false
+    io_backend:
+      type: disk
+
+    num_frame: -1
+
+# network structures
+network_g:
+  type: STDANetPP
+  # type: BasicVSRPlusPlus
+  mid_channels: 144
+  num_blocks: 3
+  is_low_res_input: false
+  spynet_path: model_zoo/pretrained_models/flownet/spynet_sintel_final-3d2a1287.pth
+
+
+# path
+path:
+  pretrain_network_g: model_zoo/BSD3.pth
+  strict_load_g: True
+
+
+# validation settings
+val:
+  val_freq: !!float 2.5e3
+  # val_freq: !!float 1e2
+  save_img: false
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: false
+    ssim:
+      type: ssim_calculate
+      # crop_border: 0
+      # test_y_channel: false
+
+# logging settings
+logger:
+  print_freq: 500
+  save_checkpoint_freq: !!float 2.5e3
+  use_tb_logger: true
+  wandb:
+    project: ~
+    resume_id: ~
+    wandb_name: ~
+
+# dist training settings
+dist_params:
+  backend: nccl
+  port: 29240
+
+
+find_unused_parameters: true
+
+
+
+
