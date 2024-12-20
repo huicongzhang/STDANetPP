@@ -125,5 +125,5 @@ scripts/dist_train.sh 2 options/train/STDANetPP_bsd3.yml
 This project is open sourced under MIT license. 
 
 ## Acknowledgement
-This project is based on [BasicSR](https://github.com/XPixelGroup/BasicSR), [ProPainter](https://github.com/sczhou/ProPainter), [RVRT](https://github.com/JingyunLiang/RVRT) and [Shift-Net](https://github.com/dasongli1/Shift-Net). 
+This project is based on [BasicSR](https://github.com/XPixelGroup/BasicSR), [ProPainter](https://github.com/sczhou/ProPainter) and [RVRT](https://github.com/JingyunLiang/RVRT). 
 
