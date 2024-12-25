@@ -1,12 +1,15 @@
-# Patch-Based Spatio-Temporal Deformable Attention BiRNN for Video Deblurring (Under Review)
+# Patch-Based Spatio-Temporal Deformable Attention BiRNN for Video Deblurring 
 
-[Huicong Zhang](https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AETOMgEHtB1sAOmB8EMhprsRACCsD_wLbTGpnaBrkyshm-oVsQtYAjL8q9BRZI6gOiD6nQZSg_urpfJV1FgXa1iGGU6rPo0&user=ASaPjIgAAAAJ), [Haozhe Xie](https://haozhexie.com), [Shengping Zhang](https://scholar.google.com/citations?user=hMNsT8sAAAAJ&hl=zh-CN&oi=ao),
-[Hongxun Yao](https://scholar.google.com/citations?user=aOMFNFsAAAAJ)
+[Huicong Zhang](https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AETOMgEHtB1sAOmB8EMhprsRACCsD_wLbTGpnaBrkyshm-oVsQtYAjL8q9BRZI6gOiD6nQZSg_urpfJV1FgXa1iGGU6rPo0&user=ASaPjIgAAAAJ)<sup>1</sup>, [Haozhe Xie](https://haozhexie.com)<sup>2</sup>, [Shengping Zhang](https://scholar.google.com/citations?user=hMNsT8sAAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>,
+[Hongxun Yao](https://scholar.google.com/citations?user=aOMFNFsAAAAJ)<sup>1</sup>
 
-Harbin Institute of Technology, S-Lab, Nanyang Technological University
+<sup>1</sup>Harbin Institute of Technology, <sup>2</sup>S-Lab, Nanyang Technological University
 
-## Update
-- [2024/12/20] The training and testing code are released.  
+## Changelogs
+- [2024/12/20] The training and testing code are released.
+
+## TODO
+- [] Pretrained Models
 
 ## Datasets
 
