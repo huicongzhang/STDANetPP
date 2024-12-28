@@ -8,9 +8,6 @@
 ## Changelogs
 - [2024/12/20] The training and testing code are released.
 
-## TODO
-- [] Pretrained Models
-
 ## Datasets
 
 We use the [GoPro](https://github.com/SeungjunNah/DeepDeblur_release), [BSD](https://drive.google.com/file/d/19cel6QgofsWviRbA5IPMEv_hDbZ30vwH/view?usp=sharing) and [DVD](http://www.cs.ubc.ca/labs/imager/tr/2017/DeepVideoDeblurring/) datasets in our experiments, which are available below:
