@@ -140,8 +140,8 @@ venv.bak/
 
 
 Visualizer
-datasets/
-
+datasets/*
+!datasets/.gitkeep
 model_zoos/*
 !model_zoos/pretrained_models/
 
