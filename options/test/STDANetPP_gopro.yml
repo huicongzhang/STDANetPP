@@ -39,7 +39,7 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: model_zoo/GoPro/net_g_440000_3484.pth
+  pretrain_network_g: model_zoo/GOPRO.pth
   strict_load_g: True
 
 
