@@ -493,7 +493,9 @@ class ModelVRT(BaseModel):
             val_data = dataset[idx_data]
             filenames = val_data["folder"]
             self.feed_data_test2(val_data)
+            self.net_g.eval()
             self.test_by_patch()
+            self.net_g.train()
             visuals = self.get_current_visuals()
             del self.lq
             del self.output
