@@ -141,6 +141,9 @@ venv.bak/
 
 Visualizer
 datasets/
-model_zoo/
+
+model_zoos/*
+!model_zoos/pretrained_models/
+
 results/
 experiments/
