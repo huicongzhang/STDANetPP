@@ -18,6 +18,10 @@ We use the [GoPro](https://github.com/SeungjunNah/DeepDeblur_release), [BSD](htt
 
 You could download the zip file and then extract it to the [datasets](datasets) folder. 
 
+## Pretrained Models
+
+You could download the pretrained model from [here](https://drive.google.com/drive/folders/15v9J7uPli2f5Q0Ce4hNQPrimHjdpwMQe?usp=sharing) and put the weights in [model_zoos](model_zoos). 
+
 ## Dataset Organization Form
 If you prepare your own dataset, please follow the following form like GOPRO/DVD/BSD:
 ```
